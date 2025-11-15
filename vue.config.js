@@ -2,6 +2,9 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
+  chainWebpack: config => {
+    config.module.rules.delete('eslint');
+  },
   transpileDependencies: true,
     devServer: {
     https: true  // 开发环境也强制HTTPS
