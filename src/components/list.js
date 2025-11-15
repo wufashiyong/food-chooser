@@ -702,3 +702,220 @@ export const list =  [
     tips: '辣椒剪段更出味'
   }
 ]
+
+
+// weekend-special.js - 周末豪华大餐专属菜谱
+export const weekendSpecial = [
+  {
+    name: '红酒炖牛肉',
+    tags: ['法式', '浪漫', '耗时但值得'],
+    time: '3小时',
+    cost: '约80元',
+    serving: '3-4人份',
+    category: ['weekend', 'special'],
+    difficulty: '中等',
+    ingredients: [
+      { name: '牛腩', amount: '500g' },
+      { name: '红酒', amount: '1瓶（750ml）' },
+      { name: '胡萝卜', amount: '2根' },
+      { name: '洋葱', amount: '1个' },
+      { name: '蘑菇', amount: '200g' },
+      { name: '培根', amount: '100g' },
+      { name: '番茄膏', amount: '2勺' },
+      { name: '百里香', amount: '适量' },
+      { name: '月桂叶', amount: '2片' },
+      { name: '黑胡椒', amount: '适量' },
+      { name: '海盐', amount: '适量' },
+      { name: '面粉', amount: '2勺' }
+    ],
+    steps: [
+      '牛腩切块用厨房纸吸干水分，撒盐和黑胡椒腌制15分钟',
+      '培根切条煎至金黄，取出备用',
+      '用培根油将牛腩每面煎至焦黄，取出备用',
+      '洋葱、胡萝卜切块，蘑菇切片，用同一锅炒香',
+      '加入番茄膏炒出红油，撒入面粉炒匀',
+      '倒入红酒，加入百里香、月桂叶，煮沸后转小火',
+      '放回牛肉和培根，加盖慢炖2.5小时',
+      '最后30分钟加入蘑菇，炖至牛肉软烂',
+      '去除月桂叶，调整盐味，搭配法棍或土豆泥享用'
+    ],
+    tips: '选择酒体饱满的红酒如赤霞珠，炖煮时间越长风味越浓郁',
+    pairing: '搭配烤蔬菜和红酒更佳',
+    specialNote: '适合纪念日或重要聚会'
+  },
+  {
+    name: '意大利海鲜烩饭',
+    tags: ['意式', '海鲜盛宴', '餐厅级'],
+    time: '45分钟',
+    cost: '约60元',
+    serving: '2-3人份',
+    category: ['weekend', 'special'],
+    difficulty: '中等',
+    ingredients: [
+      { name: '意大利米', amount: '200g' },
+      { name: '大虾', amount: '8只' },
+      { name: '青口贝', amount: '10个' },
+      { name: '鱿鱼', amount: '1只' },
+      { name: '鱼高汤', amount: '500ml' },
+      { name: '白葡萄酒', amount: '100ml' },
+      { name: '洋葱', amount: '半个' },
+      { name: '大蒜', amount: '3瓣' },
+      { name: '番茄', amount: '2个' },
+      { name: '藏红花', amount: '一小撮' },
+      { name: '帕玛森奶酪', amount: '适量' },
+      { name: '欧芹', amount: '适量' },
+      { name: '柠檬', amount: '1个' }
+    ],
+    steps: [
+      '海鲜处理干净，虾去壳留尾，鱿鱼切圈',
+      '鱼高汤加热保温，藏红花用温水泡发',
+      '洋葱、大蒜切末，番茄去皮切丁',
+      '橄榄油炒香洋葱大蒜，加入意大利米炒至透明',
+      '倒入白葡萄酒煮至酒精挥发',
+      '分次加入热高汤，每次待米吸收后再加下一勺',
+      '煮10分钟后加入番茄和藏红花水',
+      '米粒八成熟时铺上海鲜，加盖焖5分钟',
+      '撒帕玛森奶酪和欧芹，挤柠檬汁即可'
+    ],
+    tips: '米粒要有嚼劲（al dente），不要过度搅拌',
+    pairing: '搭配白葡萄酒如霞多丽',
+    specialNote: '藏红花是这道菜的灵魂'
+  },
+  {
+    name: '慢烤羊排配薄荷酱',
+    tags: ['西餐', '节日大餐', '精致'],
+    time: '2小时',
+    cost: '约120元',
+    serving: '2人份',
+    category: ['weekend', 'special'],
+    difficulty: '中等',
+    ingredients: [
+      { name: '法式羊排', amount: '1扇（8根）' },
+      { name: '迷迭香', amount: '2枝' },
+      { name: '大蒜', amount: '5瓣' },
+      { name: '橄榄油', amount: '适量' },
+      { name: '海盐', amount: '适量' },
+      { name: '黑胡椒', amount: '适量' },
+      { name: '第戎芥末酱', amount: '1勺' },
+      { name: '面包糠', amount: '50g' },
+      { name: '帕玛森奶酪', amount: '30g' },
+      // 薄荷酱部分
+      { name: '新鲜薄荷', amount: '1把' },
+      { name: '希腊酸奶', amount: '100g' },
+      { name: '柠檬汁', amount: '1个' },
+      { name: '蜂蜜', amount: '1小勺' }
+    ],
+    steps: [
+      '羊排用厨房纸吸干，两面撒满海盐和黑胡椒',
+      '大蒜压碎与迷迭香、橄榄油混合，涂抹羊排腌制1小时',
+      '烤箱预热200°C，羊排煎至两面金黄',
+      '抹上第戎芥末酱，撒面包糠和帕玛森奶酪混合物',
+      '入烤箱烤15-20分钟（三分熟）或至个人喜好程度',
+      '制作薄荷酱：薄荷叶切碎，与希腊酸奶、柠檬汁、蜂蜜混合',
+      '羊排静置5分钟后切块，搭配薄荷酱和烤蔬菜'
+    ],
+    tips: '用温度计测量内部温度：55°C三分熟，65°C全熟',
+    pairing: '搭配红酒如西拉或梅洛',
+    specialNote: '适合生日或浪漫晚餐'
+  },
+  {
+    name: '日式寿喜烧',
+    tags: ['日式', '围炉', '丰盛'],
+    time: '90分钟',
+    cost: '约100元',
+    serving: '3-4人份',
+    category: ['weekend', 'special'],
+    difficulty: '简单',
+    ingredients: [
+      { name: '和牛片', amount: '300g' },
+      { name: '老豆腐', amount: '1块' },
+      { name: '大葱', amount: '2根' },
+      { name: '香菇', amount: '8朵' },
+      { name: '金针菇', amount: '1把' },
+      { name: '茼蒿', amount: '1把' },
+      { name: '白菜', amount: '适量' },
+      { name: '魔芋丝', amount: '1包' },
+      { name: '寿喜烧酱汁', amount: '200ml' },
+      { name: '可生食鸡蛋', amount: '4个' },
+      { name: '黄油', amount: '20g' }
+    ],
+    steps: [
+      '所有蔬菜洗净切好，豆腐切块煎至两面金黄',
+      '寿喜锅加热，融化黄油，煎香大葱段',
+      '铺入和牛片略煎，倒入寿喜烧酱汁',
+      '整齐摆放所有食材：豆腐、香菇、金针菇、白菜等',
+      '加入适量水，煮沸后转小火慢炖',
+      '可生食鸡蛋打散作为蘸料',
+      '边煮边吃，最后可加入乌冬面收尾'
+    ],
+    tips: '先煎肉再放蔬菜，牛肉不要煮太久保持嫩滑',
+    pairing: '搭配清酒或绿茶',
+    specialNote: '冬日暖身最佳选择'
+  },
+  {
+    name: '泰式冬阴功汤',
+    tags: ['泰式', '酸辣开胃', '异国风味'],
+    time: '40分钟',
+    cost: '约50元',
+    serving: '3-4人份',
+    category: ['weekend', 'special'],
+    difficulty: '简单',
+    ingredients: [
+      { name: '大虾', amount: '200g' },
+      { name: '草菇', amount: '150g' },
+      { name: '香茅', amount: '2根' },
+      { name: '柠檬叶', amount: '5片' },
+      { name: '南姜', amount: '3片' },
+      { name: '小米椒', amount: '3个' },
+      { name: '番茄', amount: '1个' },
+      { name: '洋葱', amount: '半个' },
+      { name: '椰浆', amount: '200ml' },
+      { name: '鱼露', amount: '2勺' },
+      { name: '青柠', amount: '2个' },
+      { name: '冬阴功酱', amount: '2勺' },
+      { name: '香菜', amount: '适量' }
+    ],
+    steps: [
+      '虾去壳留尾，虾头用来熬汤底',
+      '香茅拍松切段，南姜切片，番茄切块',
+      '虾头炒出红油，加水煮沸熬10分钟，过滤得虾汤',
+      '虾汤中加入香茅、南姜、柠檬叶煮5分钟出味',
+      '加入冬阴功酱、草菇、番茄煮5分钟',
+      '放入虾仁煮至变色，加入椰浆',
+      '关火后加入鱼露、青柠汁、小米椒',
+      '撒香菜，搭配米饭享用'
+    ],
+    tips: '青柠汁最后放，煮久会变苦',
+    pairing: '搭配泰国茉莉香米',
+    specialNote: '酸辣开胃，适合夏天'
+  },
+  {
+    name: '法式焦糖布蕾',
+    tags: ['法式甜点', '精致', '完美收官'],
+    time: '2小时（含冷藏）',
+    cost: '约30元',
+    serving: '4人份',
+    category: ['weekend', 'special', 'dessert'],
+    difficulty: '中等',
+    ingredients: [
+      { name: '淡奶油', amount: '250ml' },
+      { name: '牛奶', amount: '100ml' },
+      { name: '蛋黄', amount: '4个' },
+      { name: '细砂糖', amount: '40g' },
+      { name: '香草荚', amount: '半根' },
+      { name: '黄砂糖', amount: '适量（焦糖用）' },
+      { name: '喷枪', amount: '1个' }
+    ],
+    steps: [
+      '淡奶油、牛奶、刮出的香草籽和荚一起加热至微沸',
+      '蛋黄加细砂糖打至发白浓稠',
+      '慢慢倒入热奶油，边倒边搅拌',
+      '过筛布丁液，倒入烤碗中',
+      '烤盘加热水，150°C水浴烤40分钟',
+      '冷藏4小时以上，表面撒黄砂糖用喷枪焦化'
+    ],
+    tips: '水浴法防止布丁开裂，焦糖要趁热吃',
+    pairing: '搭配甜白葡萄酒或咖啡',
+    specialNote: '宴客甜点的绝佳选择'
+  }
+];

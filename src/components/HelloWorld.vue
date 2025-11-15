@@ -20,12 +20,12 @@
     <!-- 添加一个可爱的图标 -->
     <div class="food-icon">🍕</div>
 
-    <div class="radio-section">
+    <div class="radio-section" v-if="false">
       <el-radio-group v-model="radio1">
         <el-radio-button label="1" class="radio-btn">
           <span class="btn-icon">🎯</span>帮我选~
         </el-radio-button>
-        <el-radio-button label="2" class="radio-btn">
+        <el-radio-button label="2" class="radio-btn" >
           <span class="btn-icon">🔍</span>自己挑！
         </el-radio-button>
       </el-radio-group>
@@ -210,7 +210,7 @@
 </template>
 
 <script>
-import { list } from "./list";
+import { list, weekendSpecial } from "./list";
 export default {
   data() {
     return {
@@ -225,7 +225,7 @@ export default {
       currentDish: null,
 
       // 增强版菜谱数据库
-      dishDatabase: list
+      dishDatabase: [...list, ...weekendSpecial],
     };
   },
   methods: {
@@ -238,11 +238,21 @@ export default {
         let filteredDishes = this.dishDatabase;
 
         if (this.filters.length > 0) {
-          filteredDishes = this.dishDatabase.filter((dish) =>
-            this.filters.some((filter) => dish.category.includes(filter))
-          );
+          // 特殊处理：如果选择了weekend，优先显示豪华周末大餐
+          if (this.filters.includes("weekend")) {
+            filteredDishes = this.dishDatabase.filter(
+              (dish) =>
+                dish.category.includes("weekend") ||
+                dish.category.includes("special")
+            );
+          } else {
+            filteredDishes = this.dishDatabase.filter((dish) =>
+              this.filters.some((filter) => dish.category.includes(filter))
+            );
+          }
         }
 
+        // 如果过滤后没有结果，使用全部菜谱
         if (filteredDishes.length === 0) {
           filteredDishes = this.dishDatabase;
         }
@@ -259,7 +269,7 @@ export default {
     },
 
     showRecipe(dish) {
-      this.currentDish = dish;
+      this.crrentDish = dish;
       this.recipeVisible = true;
     },
 
