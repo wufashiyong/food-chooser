@@ -13,7 +13,7 @@
     <div class="floating-food">🍲</div>
 
     <div class="head">
-      <span class="title-text">今天吃啥呀</span>
+      <span class="title-text">美食生成器</span>
       <span class="title-emoji">🤔</span>
     </div>
 

@@ -7,7 +7,8 @@ module.exports = defineConfig({
   },
   transpileDependencies: true,
     devServer: {
-    https: true  // 开发环境也强制HTTPS
+    host: '0.0.0.0',    // 这个只影响本地开发
+    port: 8080
   },
   publicPath: process.env.NODE_ENV === 'production' 
     ? '/food-chooser/'  // 重要：改成你的仓库名
