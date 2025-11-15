@@ -512,7 +512,7 @@ export default {
   color: white;
   text-align: center;
   padding: 25px 0;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 25px rgba(255, 106, 0, 0.4);
@@ -626,7 +626,7 @@ export default {
   border: none;
   border-radius: 30px;
   padding: 15px 35px;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: bold;
   box-shadow: 0 6px 20px rgba(255, 106, 0, 0.4);
   transition: all 0.3s ease;
@@ -700,7 +700,7 @@ export default {
 }
 
 .dish-name {
-  font-size: 28px;
+  font-size: 38px;
   font-weight: bold;
   color: #ff6a00;
   margin-bottom: 15px;
@@ -813,7 +813,7 @@ export default {
   color: #ff6a00;
   text-align: center;
   margin-bottom: 25px;
-  font-size: 22px;
+  font-size: 36px;
 }
 
 .ingredients-card {
@@ -1036,7 +1036,7 @@ export default {
   }
 
   .head {
-    font-size: 22px;
+    font-size: 36px;
     padding: 20px 0;
     border-radius: 15px;
   }
